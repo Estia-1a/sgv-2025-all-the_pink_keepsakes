@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Burger</title>
 
-    <link rel="stylesheet" href="Hamburger.css" media="screen and (min-width: 768px)"> 
-    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
-    <link rel="stylesheet" href="script.js">
-    <title>Document2</title>
+    
+    <link rel="stylesheet" href="Hamburger.css">
 </head>
 <body>
+
+    <p><a href="nosproduits.html">ici pour consulter nos produits</a></p>
     <p><a href="registerPage.html">ici pour enregistrer</a></p>
-    <div id="open" class="open">
-        <a id="close" href="#" class="close"></a>
+
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" id="closeBtn" class="close">&times;</a>
         <ul>
-            <li><a href="#">Page d'accueil</a></li>
-            <li><a href="#">S'enregistrer</a></li>
-            <li><a href="#">Nos produits</a></li>
+            <li><a href="index.html">Page d'accueil</a></li>
+            <li><a href="registerPage.html">S'enregistrer</a></li>
+            <li><a href="nosproduits.html">Nos produits</a></li>
         </ul>
     </div>
-        <a href="#" id="openbtn">
-            <span class="openbtn">
-                <span></span>
-                <span></span>
-                <span></span>
-        </a>
 
+    
+    <button id="openBtn" class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    
+    <script src="script.js" defer></script>
 </body>
 </html>
