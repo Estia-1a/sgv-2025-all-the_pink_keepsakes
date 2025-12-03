@@ -11,5 +11,20 @@
 <body>
     <h1>la page d'enregistrement</h1>
     
+    <div class="box">
+        <h3>Entrez vos identifiants</h3>
+        <input type="text" placeholder="Identifiant" id="identifiant">
+        <input type="text" placeholder="Mot de passe" id="Mot de passe">
+        <button onclick="valider()">Valider</button>
+    </div>
+
+    <script>
+        function valider() {
+            const id = document.getElementById('identifiant').value;
+            const id2 = document.getElementById('Mot de passe').value;
+            alert("identifiant saisi : " + id + " et " + "Mot de passe saisi : " + id2);
+        }
+    </script>
+
 </body>
 </html>
