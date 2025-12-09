@@ -1,5 +1,18 @@
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: white; /* ou la couleur de votre choix */
+}
+
+.logo-center {
+    width: 300px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .hero-section {
-    background-image: url('\media\pictures\maraicher.jpg');
+    background-image: url('media/pictures/maraicher.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,16 +30,16 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(254, 252, 252, 0.968); 
+    background: rgba(17, 189, 37, 0.3); /* Réduire de 0.968 à 0.3 ou moins */
 }
 
 .content-overlay {
     position: relative;
     z-index: 1;
-    color: white;
+    color: rgb(255, 255, 255); /* Mettre en blanc pour mieux contraster */
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Ajouter une ombre pour la lisibilité */
 }
-
 
 .sidenav {
     height: 100%;
@@ -34,7 +47,7 @@
     position: fixed;
     top: 0;
     left: -250px;
-    background-color: blue;
+    background-color: rgb(6, 6, 14);
     padding-top: 60px;
     transition: left 0.5s ease;
     z-index: 2000;
