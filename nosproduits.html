@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)"> 
-    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)"> 
     <title>Document2</title>
+    <link rel="stylesheet" href="Hamburger.css">
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="Authentification.css">
 </head>
 <body>
     <header>
         <h1>Nos fruits et légumes</h1>
     </header>
-    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" id="closeBtn" class="close">&times;</a>
+        <ul>
+            <li><a href="index.html">Page d'accueil</a></li>
+            <li><a href="registerPage.html">S'enregistrer</a></li>
+            <li><a href="nosproduits.html">Nos produits</a></li>
+        </ul>
+    </div>
+ <button id="openBtn" class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <script src="script.js" defer></script>
     <section id="produits">
     <h2>Des légumes frais, locaux et de saison</h2>
         <div>
