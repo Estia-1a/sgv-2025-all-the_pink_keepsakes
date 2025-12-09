@@ -13,6 +13,13 @@ display: flex;
     min-height: 100vh;
 }
 
+.box {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    width: 300px; 
+}
+
 /* Header fixé en haut */
 .site-header {
     position: fixed;
