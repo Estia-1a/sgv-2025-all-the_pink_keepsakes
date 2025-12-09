@@ -1,4 +1,29 @@
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Espace pour ne pas cacher le contenu sous le header fixe */
+    padding-top: 70px; /* doit être >= à la hauteur du header */
+    min-height: 100vh;
+}
+
+/* Header fixé en haut */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 80px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
 /* Style général */
 body {
     margin: 0;
@@ -23,7 +48,7 @@ body {
 
 /* Titre */
 .auth-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 200px;   
     color: #333;
 }
 
@@ -38,7 +63,7 @@ body {
     font-size: 16px;
 }
 
-/* Bouton */
+/* Bouton */    
 .auth-container button {
     width: 100%;
     padding: 12px;
