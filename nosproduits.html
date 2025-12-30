@@ -5,15 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document2</title>
     <link rel="stylesheet" href="Hamburger.css">
-    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
-    <link rel="stylesheet" href="Authentification.css">
+    <link rel="stylesheet" href="nosproduit.css"> 
+
 </head>
 <body>
-    <header>
-        <h1>Nos fruits et légumes</h1>
+    
+<header class="site-header"> <h1>Nos fruits et légumes</h1>
     </header>
-    <div id="mySidenav" class="sidenav">
+    
+    <section id="produits" class="grille-produits">
+        
+        <div class="carte-produit">
+            <img src="media/pictures/carotte.jpg" alt="carotte">
+            <h3>Carottes Fanes</h3>
+            <p class="description">Riches en vitamines, direct producteur.</p>
+            <p class="prix">2.50 € / kg</p>
+            <button class="btn-panier">Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/pomme.jpg" alt="pomme">
+            <h3>Pommes Française</h3>
+            <p class="description">Croquantes, juteuses et naturellement sucrées.</p>
+            <p class="prix">3.10 € / kg</p>
+            <button class="btn-panier">Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/betterave.jpg" alt="betterave">
+            <h3>Betteraves du sud</h3>
+            <p class="description">Douces et colorées, idéales pour vos salades.</p>
+            <p class="prix">2.30 € / kg</p>
+            <button class="btn-panier">Ajouter au panier</button>
+        </div>
+
+    </section>
+
+
+     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" id="closeBtn" class="close">&times;</a>
         <ul>
             <li><a href="index.html">Page d'accueil</a></li>
@@ -26,22 +55,7 @@
         <span></span>
         <span></span>
     </button>
-    <script src="script.js" defer></script>
-    <section id="produits">
-    <h2>Des légumes frais, locaux et de saison</h2>
-        <div>
-            <img src="carotte.jpg" alt="carotte">
-            <p>Riches en vitamines, parfaites pour vos plats cuisinés.</p>
-        </div>
-        <div>
-            <img src="pomme.jpg" alt="pomme">
-            <p>Croquantes, juteuses et naturellement sucrées, nos pommes sont cultivées avec soin pour préserver toute leur fraîcheur.</p>
-        </div>
-        <div>
-          <img src="betterave.jpg" alt="betterave">
-            <p>Douces et colorées, nos betteraves sont idéales pour vos salades, jus ou plats cuisinés.</p>  
-        </div>
-    </section>
 
-
+<script src="script.js"></script>
+</body>
 </body>

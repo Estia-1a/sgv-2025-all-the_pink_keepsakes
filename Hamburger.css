@@ -1,11 +1,11 @@
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: white; /* ou la couleur de votre choix */
+    background-color: white; 
 }
 
 .logo-center {
-    width: 300px; /* Ajustez la taille selon vos besoins */
+    width: 300px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -30,17 +30,18 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(17, 189, 37, 0.3); /* Réduire de 0.968 à 0.3 ou moins */
+    background: rgba(17, 189, 37, 0.3); 
 }
 
 .content-overlay {
     position: relative;
     z-index: 1;
-    color: rgb(255, 255, 255); /* Mettre en blanc pour mieux contraster */
+    color: rgb(255, 255, 255); 
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Ajouter une ombre pour la lisibilité */
 }
 
+/*CSS pour le bouton hamburger*/
 .sidenav {
     height: 100%;
     width: 250px;
@@ -50,7 +51,7 @@ header {
     background-color: rgb(6, 6, 14);
     padding-top: 60px;
     transition: left 0.5s ease;
-    z-index: 2000;
+    z-index: 10000;
 }
 
 .sidenav.active {
@@ -88,7 +89,7 @@ header {
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 3000;
+    z-index: 9999;
     width: 30px;
     height: 25px;
     display: flex;
