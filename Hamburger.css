@@ -38,7 +38,7 @@ header {
     z-index: 1;
     color: rgb(255, 255, 255); 
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Ajouter une ombre pour la lisibilité */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
 }
 
 /*CSS pour le bouton hamburger*/
@@ -108,3 +108,4 @@ header {
     border-radius: 10px;
     transition: all 0.3s;
 }
+

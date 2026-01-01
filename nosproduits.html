@@ -9,7 +9,10 @@
 
 </head>
 <body>
-    
+    <div class="panier-container">
+    <span id="panier-icone">🛒</span>
+    <span id="panier-compteur">0</span>
+</div>
 <header class="site-header"> <h1>Nos fruits et légumes</h1>
     </header>
     
@@ -20,7 +23,8 @@
             <h3>Carottes Fanes</h3>
             <p class="description">Riches en vitamines, direct producteur.</p>
             <p class="prix">2.50 € / kg</p>
-            <button class="btn-panier">Ajouter au panier</button>
+            <button class="btn-panier" onclick="ajouterAuPanier('carotte', 2.50)">
+    Ajouter au panier</button>
         </div>
 
         <div class="carte-produit">
@@ -28,7 +32,8 @@
             <h3>Pommes Française</h3>
             <p class="description">Croquantes, juteuses et naturellement sucrées.</p>
             <p class="prix">3.10 € / kg</p>
-            <button class="btn-panier">Ajouter au panier</button>
+            <button class="btn-panier" onclick="ajouterAuPanier('pomme', 3.10)">
+    Ajouter au panier</button>
         </div>
 
         <div class="carte-produit">
@@ -36,14 +41,15 @@
             <h3>Betteraves du sud</h3>
             <p class="description">Douces et colorées, idéales pour vos salades.</p>
             <p class="prix">2.30 € / kg</p>
-            <button class="btn-panier">Ajouter au panier</button>
-        </div>
+            <button class="btn-panier" onclick="ajouterAuPanier('betterave', 2.30)">
+    Ajouter au panier</button>        </div>
         <div class="carte-produit">
             <img src="media/pictures/tomate_cerise.jpg" alt="tomate cerise">
             <h3>Tomates Cerises</h3>
             <p class="description">Sucrées et croquantes, parfaites pour l'apéro.</p>
             <p class="prix">3.50 € / barquette</p>
-            <button class="btn-panier">Ajouter au panier</button>
+            <button class="btn-panier" onclick="ajouterAuPanier('tomate_cerise', 3.50)">
+    Ajouter au panier</button>
         </div>
 
         <div class="carte-produit">
@@ -51,7 +57,8 @@
             <h3>Fraises de Pays</h3>
             <p class="description">Parfumées et charnues, récoltées à maturité.</p>
             <p class="prix">5.80 € / barquette</p>
-            <button class="btn-panier">Ajouter au panier</button>
+            <button class="btn-panier" onclick="ajouterAuPanier('fraise', 5.80)">
+    Ajouter au panier</button>
         </div>
 
         <div class="carte-produit">
@@ -59,7 +66,8 @@
             <h3>Courgettes Bio</h3>
             <p class="description">Tendres et savoureuses, idéales en ratatouille.</p>
             <p class="prix">1.95 € / kg</p>
-            <button class="btn-panier">Ajouter au panier</button>
+            <button class="btn-panier" onclick="ajouterAuPanier('courgette', 1.95)">
+    Ajouter au panier</button>
         </div>
 
         <div class="carte-produit">
@@ -67,7 +75,8 @@
             <h3>Poires Conférence</h3>
             <p class="description">Fondantes et sucrées, un délice d'automne.</p>
             <p class="prix">2.90 € / kg</p>
-            <button class="btn-panier">Ajouter au panier</button>
+            <button class="btn-panier" onclick="ajouterAuPanier('poire', 2.90)">
+    Ajouter au panier</button>
         </div>
 
         <div class="carte-produit">
@@ -75,7 +84,8 @@
             <h3>Poivrons Mixtes</h3>
             <p class="description">Un festival de couleurs pour vos plats ensoleillés.</p>
             <p class="prix">3.20 € / kg</p>
-            <button class="btn-panier">Ajouter au panier</button>
+            <button class="btn-panier" onclick="ajouterAuPanier('poivron', 3.20)">
+    Ajouter au panier</button>
         </div>
 
         <div class="carte-produit">
@@ -83,7 +93,152 @@
             <h3>Pommes de Terre</h3>
             <p class="description">Variété polyvalente, idéale pour frites ou purée.</p>
             <p class="prix">1.50 € / kg</p>
-            <button class="btn-panier">Ajouter au panier</button>
+            <button class="btn-panier" onclick="ajouterAuPanier('pdtn', 1.50)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/aubergine.jpg" alt="aubergine">
+            <h3>Aubergines de Saison</h3>
+            <p class="description">Peau lisse et chair ferme, parfaites pour vos grillades.</p>
+            <p class="prix">2.80 € / kg</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('aubergine', 2.80)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/oignon_rouge.jpg" alt="oignon rouge">
+            <h3>Oignons Rouges</h3>
+            <p class="description">Doux et croquants, excellents crus en salade.</p>
+            <p class="prix">1.80 € / kg</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('oignon_rouge', 1.80)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/abricot.jpg" alt="abricot">
+            <h3>Abricots Moelleux</h3>
+            <p class="description">Une chair sucrée et veloutée, gorgée de soleil.</p>
+            <p class="prix">4.50 € / kg</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('abricot', 4.50)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/concombre.jpg" alt="concombre">
+            <h3>Concombres Noa</h3>
+            <p class="description">Très digestes et ultra-frais pour vos étés à Bidart.</p>
+            <p class="prix">1.10 € / pièce</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('concombre', 1.10)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/melon.jpg" alt="melon">
+            <h3>Melons de Pays</h3>
+            <p class="description">Parfumés et sucrés à point, sélectionnés à la main.</p>
+            <p class="prix">3.20 € / pièce</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('melon', 3.20)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/radis.jpg" alt="radis">
+            <h3>Radis Roses</h3>
+            <p class="description">Une botte croquante et pleine de piquant.</p>
+            <p class="prix">1.50 € / botte</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('radis', 1.50)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/haricot_vert.jpg" alt="haricots verts">
+            <h3>Haricots Verts</h3>
+            <p class="description">Extra-fins et sans fils, cueillis le matin même.</p>
+            <p class="prix">4.90 € / kg</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('haricot_vert', 4.90)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/piment_doux.jpg" alt="piment doux">
+            <h3>Piment Doux</h3>
+            <p class="description">L'incontournable local pour vos omelettes et piperades.</p>
+            <p class="prix">6.50 € / kg</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('piment_doux', 6.50)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/batavia.jpg" alt="salade batavia">
+            <h3>Batavia Croquante</h3>
+            <p class="description">Une salade bien fraîche, cultivée en plein champ à Bidart.</p>
+            <p class="prix">1.20 € / pièce</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('batavia', 1.20)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/raisin.jpg" alt="raisin">
+            <h3>Raisin Chasselas</h3>
+            <p class="description">Grains fins et sucrés, idéal pour une fin de repas légère.</p>
+            <p class="prix">4.20 € / kg</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('raisin', 4.20)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/brocoli.jpg" alt="brocoli">
+            <h3>Brocolis Bio</h3>
+            <p class="description">Riche en fer et vitamines, à déguster vapeur ou sauté.</p>
+            <p class="prix">2.10 € / pièce</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('brocoli', 2.10)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/ail.jpg" alt="ail">
+            <h3>Ail Rose du Pays</h3>
+            <p class="description">Un goût subtil et une conservation longue durée.</p>
+            <p class="prix">1.00 € / tête</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('ail', 1.00)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/banane.jpg" alt="banane">
+            <h3>Bananes Cavendish</h3>
+            <p class="description">Cueillies à point pour un maximum d'énergie.</p>
+            <p class="prix">1.90 € / kg</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('banane', 1.90)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/choufleur.jpg" alt="chou-fleur">
+            <h3>Chou-Fleur Blanc</h3>
+            <p class="description">Bien pommé et bien blanc, direct producteur.</p>
+            <p class="prix">2.50 € / pièce</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('chou-fleur', 2.50)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/persil.jpg" alt="persil">
+            <h3>Persil Plat Frais</h3>
+            <p class="description">Idéal pour relever vos omelettes et vos viandes.</p>
+            <p class="prix">0.80 € / botte</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('persil', 0.80)">
+    Ajouter au panier</button>
+        </div>
+
+        <div class="carte-produit">
+            <img src="media/pictures/citron.jpg" alt="citron">
+            <h3>Citrons Jaunes</h3>
+            <p class="description">Juteux et acides, parfaits pour vos assaisonnements.</p>
+            <p class="prix">0.60 € / pièce</p>
+            <button class="btn-panier" onclick="ajouterAuPanier('citron', 0.60)">
+    Ajouter au panier</button>
         </div>
 
     </section>
@@ -104,4 +259,16 @@
     </button>
 
 <script src="script.js"></script>
+
+<div id="panier-side" class="sidenav-panier">
+    <a href="javascript:void(0)" class="close" onclick="closePanier()">&times;</a>
+    <h2>Mon Panier</h2>
+    <div id="liste-panier">
+        </div>
+    <div class="total-container">
+        <p>Total : <span id="total-prix">0.00</span> €</p>
+        <button class="btn-valider">Valider la commande</button>
+    </div>
+</div>
+<div id="overlay" onclick="closeAllMenus()"></div>
 </body>
